@@ -95,12 +95,15 @@
   align-self: center;
   font-size: 1.8em;
   margin-bottom: -3px;
+  margin-right: 10px;
 }
 
 
 .heart i.fa-heart
 {
-  color:#f44336;
+  color:#5FC2BA;
+  
+  /*color:#f44336;*/
 }
 .heart 
 {
