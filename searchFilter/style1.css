@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  font-family: 'Poppins';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  background-color: #f57168;
+
+}
+
+.container
+{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.title 
+{
+  color:#fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-group
+{
+  background-color: #fff;
+  display: flex;
+  width: 800px; 
+  height: 50px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.dropdown
+{
+  position: relative;
+  width: 150px;
+  padding-left: 5px;
+  color:#3a3a3a;
+  border-right: 2px solid #f57168;
+  cursor: pointer;
+}
+
+.default-option 
+{
+  padding:8px 25px ;
+}
+
+.dropdown-list ul
+{
+  list-style: none;
+  background-color: #fff;
+  top: 50px;
+  left: 0px;
+  color:#696969;
+  position: absolute;
+  width: 150px;
+  border-radius: 5px;
+  display: none;
+}
+
+.dropdown-list ul li 
+{
+  padding:10px 10px 10px 20px;
+
+}
+/* dropdown icon*/
+.dropdown::before
+{
+  content: "";
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color:#1d1d1d transparent;
+  position: absolute;
+  right: 20px;
+  top:50%;
+}
+
+.dropdown-list ul li::before 
+{
+  content: "";
+  border-width: 0px 8px 8px 8px;
+  border-style: solid;
+  border-color:#fff transparent;
+  position: absolute;
+  bottom:100%;
+  right:20px;
+}
+
+.dropdown-list ul li:hover
+{
+  background-color: #fff;
+  color:#f44336;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.dropdown-list ul .active 
+{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,13 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recette</title>
   <link rel="stylesheet" href="css/recipeStyle.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="searchFilter/style.css">
 </head>
 <body>
+  <nav class="navbar">
+
+    <div class="navbar__container">
+      <!-- logo-->
+      <a href="#home" id="navbar__logo">CELIAC101</a>
+      <button class="back__btn"><a href="index.html">Accueil</a></button>
+    </div>
+
+  </nav>
+
+  <div class="filter__toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <header>
+    <ul class="indicator">
+      <li data-filter="all" class="active"><a href="#">Tous</a></li>
+      <li data-filter="sale"><a href="#">Salé</a></li>
+      <li data-filter="sucre"><a href="#">Sucré</a></li>
+      <li data-filter="salade"><a href="#">Salade</a></li>
+      <li data-filter="smoothies"><a href="#">Smoothies</a></li>
+    </ul>
+  </header>
+
+
+  <div class="search__wrapper">
+
+    <div class="form-group">
+
+      <div class="dropdown">
+        <div class="default-option">Catégorie</div>
+
+        <div class="dropdown-list">
+          <ul>
+            <li>Tous</li>
+            <li>Sucré</li>
+            <li>Salé</li>
+            <li>Salade</li>
+            <li>Smoothie</li>
+          </ul>
+        </div>
+      </div>
+
+      
+    <div class="search__input">
+      <img class="search-icon" src="images/loupe.png" />
+      <input id="search" placeholder="Rechercher..." type="text" >
+      <img class="clear-icon" src="images/trash.png" />
+    </div>
+
+    </div>
+
+   <!--<ul class="list" id="list"></ul>--> 
+  </div>
+
+
   <div class="card__wrapper">
 
-    <div class="card">
-      <div class="card__body">
+    <div class="card" data-category="sucre">
+      <div  class="card__body">
         <img src="images/reciper1.jpg" class="card__img">
         <h2 class="card__title">Recipe1</h2>
         <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tempore corrupti culpa minima velit, et,</p>
@@ -24,15 +84,15 @@
           <a  class="like">
             <i class="fa fa-heart" aria-hidden="true"></i>
           </a>
-
-          <img src="images/plus.png">
+          <img class="add" src="images/plus.png">
+          
         </div>
       </div>
       
     </div>
 
-    <div class="card">
-      <div class="card__body">
+    <div class="card" data-category="smoothies">
+      <div class="card__body" >
         <img src="images/reciper2.jpg" class="card__img">
         <h2 class="card__title">Recipe2</h2>
         <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tempore corrupti culpa minima velit, et,</p>
@@ -48,8 +108,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card__body">
+    <div class="card" data-category="sale">
+      <div class="card__body" >
         <img src="images/reciper3.jpg" class="card__img">
         <h2 class="card__title">Recipe3</h2>
         <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tempore corrupti culpa minima velit, et, </p>
@@ -65,7 +125,7 @@
       </div>
     </div>
 
-    <div class="card">
+    <div class="card"  data-category="sucre">
       <div class="card__body">
         <img src="images/reciper4.jpg" class="card__img">
         <h2 class="card__title">Recipe4</h2>
@@ -82,8 +142,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card__body">
+    <div class="card" data-category="sale">
+      <div class="card__body" >
         <img src="images/reciper5.jpg" class="card__img">
         <h2 class="card__title">Recipe5</h2>
         <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tempore corrupti culpa minima velit, et,</p>
@@ -99,8 +159,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card__body">
+    <div class="card" data-category="sale">
+      <div class="card__body" >
         <img src="images/reciper6.jpg" class="card__img">
         <h2 class="card__title">Recipe6</h2>
         <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tempore corrupti culpa minima velit, et,</p>
@@ -117,8 +177,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card__body">
+    <div class="card" data-category="sale">
+      <div class="card__body" >
         <img src="images/reciper7.jpg" class="card__img">
         <h2 class="card__title">Recipe7</h2>
         <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tempore corrupti culpa minima velit, et,</p>
@@ -135,8 +195,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card__body">
+    <div class="card" data-category="salade">
+      <div class="card__body" >
         <img src="images/reciper8.jpg" class="card__img">
         <h2 class="card__title">Recipe8</h2>
         <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tempore corrupti culpa minima velit, et,</p>
@@ -152,8 +212,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <div class="card__body">
+    <div class="card" data-category="sucre">
+      <div class="card__body" >
         <img src="images/reciper9.jpg" class="card__img">
         <h2 class="card__title">Recipe9</h2>
         <p class="card__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tempore corrupti culpa minima velit, et,</p>
@@ -172,6 +232,62 @@
     
 
   </div>
+
+  <div class="footer__container">
+
+    <div class="footer__links">
+
+      <div class="footer__link--wrapper">
+
+        <div class="footer__link--item">
+          <h2>A propos</h2>
+          <div class="link">
+            <img src="images/teamwork.png">
+            <a href="#">Professionnels</a>
+          </div>
+          <div class="link">
+            <img src="images/donate.png">
+            <a href="#">Organisations</a>
+          </div>
+          
+          <div class="link">
+            <img src="images/gluten.png">
+            <a href="#">Produits</a>
+          </div>
+          <div class="link">
+            <img src="images/express-delivery.png">
+            <a href="#">Infos de livraison</a>
+          </div>
+          
+        </div>
+
+        <div class="footer__link--item">
+          <h2>Suivez-Nous sur les réseaux sociaux </h2>
+          <div class="link">
+            <i id="fb" class="fa fa-facebook-square"></i>
+            <a href="#">Facebook</a>
+          </div>
+          <div class="link">
+            <i id="insta" class="fa fa-instagram"></i>
+            <a href="#">Instagram</a>
+          </div>
+          <div class="link">
+            <i id="twitter" class="fa fa-twitter"></i>
+            <a href="#">Twitter</a>
+          </div>
+          <div class="link">
+            <i id="yt" class="fa fa-youtube-play"></i>
+            <a href="#">Youtube</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
   <script src="js/heart.js"></script>
+  <script src="js/searchBar.js"></script>
+  <script src="searchFilter/filter.js"></script>
+  <script src="searchFilter/drop.js"></script>
 </body>
 </html>

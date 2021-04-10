@@ -31,7 +31,7 @@ body{
   color: #fff;
 }
 .btn3:hover,.btn4:hover{
-  color: #137c8b;;
+  color: #137c8b;
 }
 .btn::before{
   content: "";

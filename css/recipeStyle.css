@@ -6,6 +6,132 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins',sans-serif;
+  
+}
+
+
+
+.form-group
+{
+  margin: 2rem;
+  position: relative;
+  display: flex;
+  
+  min-width: 100px;
+}
+
+.list li 
+{
+  list-style: none;
+}
+
+
+.dropdown
+{
+  position: relative;
+  width: 150px;
+  padding-left: 5px;
+  color:#3a3a3a;
+  
+  cursor: pointer;
+}
+
+.default-option 
+{
+  padding:8px 25px ;
+  color:#3a3a3a;
+}
+
+.dropdown-list ul
+{
+  list-style: none;
+  background-color: #0B162C;
+  top: 50px;
+  left: 0px;
+  color:#fff;
+  position: absolute;
+  width: 150px;
+  border-radius: 5px;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-list ul li 
+{
+  padding:10px 10px 10px 20px;
+
+}
+/* dropdown icon*/
+.dropdown::before
+{
+  content: "";
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color:#0B162C transparent;
+  position: absolute;
+  right: 20px;
+  top:50%;
+}
+
+.dropdown-list ul li::before 
+{
+  content: "";
+  border-width: 0px 8px 8px 8px;
+  border-style: solid;
+  border-color:#0B162C transparent;
+  position: absolute;
+  bottom:100%;
+  right:20px;
+}
+
+.dropdown-list ul li:hover
+{
+  background-color: #fff;
+  color:#137c8b;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.dropdown-list ul.active 
+{
+  display: block;
+}
+
+
+
+#search {
+  
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 40px;
+  width: 150%;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  transition: 0.1s ease-in;
+  background-color: #f5f5f5;
+}
+
+#search:hover, #search:focus {
+  border: 2px solid #0B162C;
+  background-color: white;
+}
+
+.search-icon {
+  position: absolute;
+  top: 9px;
+  left: 158px;
+  width: 17px;
+  padding-top: 2px;
+}
+
+.clear-icon {
+  position: absolute;
+  top: 12px;
+  right: 830px;
+  width: 17px;
+  cursor: pointer;
+  visibility: hidden;
+ /* margin-right: 645px;*/
 }
 
 .card__wrapper
@@ -39,11 +165,14 @@
 .card__title
 {
   padding: 1rem;
+  color:#5FC2BA;
+  margin-left: 5.5em;
 
 }
 .card__description
 {
   padding: 0 1rem;
+
 }
 
 .card__btn
@@ -66,7 +195,7 @@
 .card__btn a 
 {
   text-decoration: none;
-  color:#2193b0
+  color:#2193b0;
 }
 
 .card:hover
@@ -103,13 +232,37 @@
   margin-right: 15px;
 }
 
-
+.like i.fa-heart:hover
+{
+  color:#5FC2BA;
+}
 .heart i.fa-heart
 {
   color:#5FC2BA;
-  
-  /*color:#f44336;*/
 }
+
+.plus 
+{
+  animation: plus 0.5s linear;
+}
+
+
+@keyframes plus
+{
+  0%{
+    transform: rotate(0deg) scale(1.7);
+  }
+  40%{
+    transform: rotate(0deg) scale(1);
+  }
+  41%{
+    transform: rotate(360deg) scale(1);
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
+
 .heart 
 {
   animation: heart 0.5s linear;
@@ -143,5 +296,84 @@
 {
   display: flex;
   justify-content: center;
+}
+
+/* mobile menu */
+
+@media screen and (max-width:650px){
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width:100%;
+    max-width: 1300px;
+    padding:0;
+  }
+
+  .indicator {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position:absolute;
+    top:-1300px;
+    opacity:1;
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  .indicator.active{
+    background: #0B162C;
+    top:100%;
+    opacity:1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    /*height: 60vh;*/
+    font-size:1.6rem ;
+  }
+
+
+  .filter__toggle .bar{
+    width:25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #0B162C;
+  }
+
+  header ul li{
+    width: 100%;
+  }
+
+  header ul li a{
+    text-align: center;
+    padding:2rem;
+    width: 100%;
+    display: table;
+  }
+
+  #mobile-menu{
+    position: absolute;
+    top:20%;
+    right: 5%;
+    transform: translate(5%,20%);
+  }
+  .filter__toggle .bar {
+    display: block;
+    cursor:pointer;
+  } 
+
+  #mobile-menu .is-active:ntn-child(2){
+    opacity:0;
+  }
+  #mobile-menu.is-active.bar:ntn-child(1){
+    transform: translateY(8px) rotate(45deg);
+   }
+   #mobile-menu.is-active.bar:ntn-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+   }
+
 }
 
