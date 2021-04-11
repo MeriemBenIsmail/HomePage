@@ -16,7 +16,8 @@
   margin: 2rem;
   position: relative;
   display: flex;
-  
+  flex-direction: row;
+  justify-content: space-between;
   min-width: 100px;
 }
 
@@ -40,6 +41,7 @@
 {
   padding:8px 25px ;
   color:#3a3a3a;
+  
 }
 
 .dropdown-list ul
@@ -48,26 +50,54 @@
   background-color: #0B162C;
   top: 50px;
   left: 0px;
-  color:#fff;
   position: absolute;
-  width: 150px;
+  width: 200%;
   border-radius: 5px;
   display: none;
+  /*display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;*/
   z-index: 1;
 }
 
 .dropdown-list ul li 
 {
+
   padding:10px 10px 10px 20px;
 
 }
 
 .dropdown-list ul li a {
   text-decoration: none;
-  color:#fff;
+  color:#137c8b;
 }
+
+.dropdown-list ul li button 
+{
+  padding: 15px;
+  /*background-color: #5FC2BA;*/
+  background-color: #0B162C;
+  border-radius:10px ;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+/*
+.dropdown-list ul li button:hover
+{
+  background-color: #5FC2BA;
+
+}*/
+.dropdown-list ul li button:hover a
+{
+  color:#fff;
+  font-weight: bold;
+
+}
+
+
 /* dropdown icon*/
-.dropdown::before
+.default-option::before
 {
   content: "";
   border-width: 6px 6px 0 6px;
@@ -78,6 +108,8 @@
   top:50%;
 }
 
+
+
 .dropdown-list ul li::before 
 {
   content: "";
@@ -86,30 +118,32 @@
   border-color:#0B162C transparent;
   position: absolute;
   bottom:100%;
-  right:20px;
+  right: 168px;
+  
 }
 
 .dropdown-list ul li:hover 
 {
-  /*background-color: #fff;*/
-  border-radius: 5px;
+  border-radius: 2px;
 }
-.dropdown-list ul li:hover a
-{
-  color:#137c8b;
-  font-weight: bold;
-}
+
 .dropdown-list ul.active 
 {
-  display: block;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
 }
-
-
-.search__input
+.dropdown-list ul li button.selected 
 {
-  display: flex;
-  flex-direction: row;
+  background-color:#137c8b;
+  
 }
+.dropdown-list ul li button.selected a
+{
+  color:#fff;
+}
+
+
 #search {
   
   border: 1px solid grey;
@@ -120,6 +154,7 @@
   outline: 0;
   transition: 0.1s ease-in;
   background-color: #f5f5f5;
+  
 }
 
 #search:hover, #search:focus {
@@ -130,7 +165,7 @@
 .search-icon {
   position: absolute;
   top: 9px;
-  left: 158px;
+  left: 795px;
   width: 17px;
   padding-top: 2px;
 }
@@ -261,27 +296,7 @@
   color:#5FC2BA;
 }
 
-.plus 
-{
-  animation: plus 0.5s linear;
-}
 
-
-@keyframes plus
-{
-  0%{
-    transform: rotate(0deg) scale(1.7);
-  }
-  40%{
-    transform: rotate(0deg) scale(1);
-  }
-  41%{
-    transform: rotate(360deg) scale(1);
-  }
-  100%{
-    transform: rotate(0deg) scale(1);
-  }
-}
 
 .heart 
 {
@@ -316,6 +331,28 @@
 {
   display: flex;
   justify-content: center;
+}
+
+.card.activeCard
+{
+  display:block;
+}
+
+.card.nonactiveCard
+{
+  display: none;
+}
+
+.like__notif
+{
+  display: none;
+  width: 50px;
+  align-self: center;
+  margin-right: 150px;
+  background-color: #5FC2BA;
+  border-radius: 5px;
+  padding:2px;
+  transition: 0.2s;
 }
 
 

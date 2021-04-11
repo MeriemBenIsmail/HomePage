@@ -27,24 +27,23 @@
     <div class="form-group">
 
       <div class="dropdown">
-        <div class="default-option">Catégorie</div>
+        <div class="default-option">Filtre</div>
 
         <div class="dropdown-list">
           <ul class="indicator">
-            <li data-filter="all" class="active"><a href="#">Tous</a></li>
-            <li data-filter="sale"><a href="#">Salé</a></li>
-            <li data-filter="sucre"><a href="#">Sucré</a></li>
-            <li data-filter="salade"><a href="#">Salade</a></li>
-            <li data-filter="smoothies"><a href="#">Smoothies</a></li>
+            <!--<li data-filter="all" class="active"><button><a href="#">Tous</a></button></li>-->
+            <li data-filter="sale"><button><a href="#">Salé</a></button></li>
+            <li data-filter="sucre"><button><a href="#">Sucré</a></button></li>
+            <li data-filter="salade"><button><a href="#">Salade</a></button></li>
+            <li data-filter="smoothies"><button><a href="#">Smoothies</a></button></li>
           </ul>
         </div>
       </div>
 
       
     <div class="search__input">
-      <img class="search-icon" src="images/loupe.png" />
+     <!--<img class="search-icon" src="images/loupe.png"/>--> 
       <input id="search" placeholder="Rechercher..." type="text" >
-     <!-- <img class="clear-icon" src="images/trash.png" />-->
     </div>
 
     </div>
@@ -61,11 +60,16 @@
       </div>
       <div class="card__options">
         <button class="card__btn"><a href="#">Voir Recette</a></button>
-        <div class="card__icons">
 
+        <div class="like__notif">
+          Liked!
+        </div>
+
+        <div class="card__icons">
           <a  class="like">
-            <i class="fa fa-heart" aria-hidden="true"></i>
+              <i class="fa fa-heart" aria-hidden="true"></i>
           </a>
+          
           <img class="add" src="images/plus.png">
           
         </div>
