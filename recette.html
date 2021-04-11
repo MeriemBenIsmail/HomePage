@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/recipeStyle.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" href="searchFilter/style.css">
+  
 </head>
 <body>
   <nav class="navbar">
@@ -20,23 +20,7 @@
     </div>
 
   </nav>
-
-  <div class="filter__toggle" id="mobile-menu">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </div>
-
-  <header>
-    <ul class="indicator">
-      <li data-filter="all" class="active"><a href="#">Tous</a></li>
-      <li data-filter="sale"><a href="#">Salé</a></li>
-      <li data-filter="sucre"><a href="#">Sucré</a></li>
-      <li data-filter="salade"><a href="#">Salade</a></li>
-      <li data-filter="smoothies"><a href="#">Smoothies</a></li>
-    </ul>
-  </header>
-
+  
 
   <div class="search__wrapper">
 
@@ -46,12 +30,12 @@
         <div class="default-option">Catégorie</div>
 
         <div class="dropdown-list">
-          <ul>
-            <li>Tous</li>
-            <li>Sucré</li>
-            <li>Salé</li>
-            <li>Salade</li>
-            <li>Smoothie</li>
+          <ul class="indicator">
+            <li data-filter="all" class="active"><a href="#">Tous</a></li>
+            <li data-filter="sale"><a href="#">Salé</a></li>
+            <li data-filter="sucre"><a href="#">Sucré</a></li>
+            <li data-filter="salade"><a href="#">Salade</a></li>
+            <li data-filter="smoothies"><a href="#">Smoothies</a></li>
           </ul>
         </div>
       </div>
@@ -60,12 +44,10 @@
     <div class="search__input">
       <img class="search-icon" src="images/loupe.png" />
       <input id="search" placeholder="Rechercher..." type="text" >
-      <img class="clear-icon" src="images/trash.png" />
+     <!-- <img class="clear-icon" src="images/trash.png" />-->
     </div>
 
     </div>
-
-   <!--<ul class="list" id="list"></ul>--> 
   </div>
 
 

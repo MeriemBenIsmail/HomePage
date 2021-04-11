@@ -61,6 +61,11 @@
   padding:10px 10px 10px 20px;
 
 }
+
+.dropdown-list ul li a {
+  text-decoration: none;
+  color:#fff;
+}
 /* dropdown icon*/
 .dropdown::before
 {
@@ -84,27 +89,33 @@
   right:20px;
 }
 
-.dropdown-list ul li:hover
+.dropdown-list ul li:hover 
 {
-  background-color: #fff;
-  color:#137c8b;
-  font-weight: bold;
+  /*background-color: #fff;*/
   border-radius: 5px;
 }
-
+.dropdown-list ul li:hover a
+{
+  color:#137c8b;
+  font-weight: bold;
+}
 .dropdown-list ul.active 
 {
   display: block;
 }
 
 
-
+.search__input
+{
+  display: flex;
+  flex-direction: row;
+}
 #search {
   
   border: 1px solid grey;
   border-radius: 5px;
   height: 40px;
-  width: 150%;
+  width: 500px;
   padding: 2px 23px 2px 30px;
   outline: 0;
   transition: 0.1s ease-in;
@@ -124,6 +135,7 @@
   padding-top: 2px;
 }
 
+
 .clear-icon {
   position: absolute;
   top: 12px;
@@ -132,6 +144,14 @@
   cursor: pointer;
   visibility: hidden;
  /* margin-right: 645px;*/
+}
+
+
+@media screen and (max-width:700px) {
+ #search
+ {
+   width: 100%;
+ } 
 }
 
 .card__wrapper
@@ -298,82 +318,6 @@
   justify-content: center;
 }
 
-/* mobile menu */
-
-@media screen and (max-width:650px){
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width:100%;
-    max-width: 1300px;
-    padding:0;
-  }
-
-  .indicator {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 0;
-    width: 100%;
-    position:absolute;
-    top:-1300px;
-    opacity:1;
-    transition: all 0.5s ease;
-    z-index: -1;
-  }
-
-  .indicator.active{
-    background: #0B162C;
-    top:100%;
-    opacity:1;
-    transition: all 0.5s ease;
-    z-index: 99;
-    /*height: 60vh;*/
-    font-size:1.6rem ;
-  }
 
 
-  .filter__toggle .bar{
-    width:25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #0B162C;
-  }
-
-  header ul li{
-    width: 100%;
-  }
-
-  header ul li a{
-    text-align: center;
-    padding:2rem;
-    width: 100%;
-    display: table;
-  }
-
-  #mobile-menu{
-    position: absolute;
-    top:20%;
-    right: 5%;
-    transform: translate(5%,20%);
-  }
-  .filter__toggle .bar {
-    display: block;
-    cursor:pointer;
-  } 
-
-  #mobile-menu .is-active:ntn-child(2){
-    opacity:0;
-  }
-  #mobile-menu.is-active.bar:ntn-child(1){
-    transform: translateY(8px) rotate(45deg);
-   }
-   #mobile-menu.is-active.bar:ntn-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-   }
-
-}
 
