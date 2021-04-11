@@ -212,27 +212,27 @@ section h2:hover ~ img
   padding: 10px;
   font-size: 15px;
 }
+
 .services__btn {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
+  align-self: center;
   margin-top:16px;
-  
-  
+
 }
 .services__btn a {
   text-decoration: none;
   color:#137c8b;
 }
-.services__btn a:hover{
-  color:#fff;
-}
-
 
 .services__card button:hover {
   cursor:pointer;
   font-size: 1.08rem;
   transition: 0.3s ease-in;
 
+}
+.services__card button:hover a{
+  color:#fff;
 }
 .services__card:hover {
   transform: scale(1.075);
