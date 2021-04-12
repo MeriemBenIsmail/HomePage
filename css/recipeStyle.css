@@ -71,6 +71,10 @@
   text-decoration: none;
   color:#137c8b;
 }
+.dropdown-list ul li a:hover 
+{
+  color:#fff;
+}
 
 .dropdown-list ul li button 
 {
@@ -273,7 +277,7 @@
 }
 .card__icons img 
 {
-
+  
   margin: 5px;
   width: 30px;
   height: 30px;
@@ -342,9 +346,10 @@
 {
   display: none;
 }
-
+/*
 .like__notif
 {
+  
   display: none;
   width: 50px;
   align-self: center;
@@ -352,9 +357,16 @@
   background-color: #5FC2BA;
   border-radius: 5px;
   padding:2px;
-  transition: 0.2s;
+  transition: 0.5s;
+  position: absolute;
+  margin-top: 50px;
 }
 
+.like__notif.activeNotif
+{
+  display: block;
+}
+*/
 
 
 

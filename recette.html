@@ -5,21 +5,68 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recette</title>
+  <link rel="stylesheet" href="home-draft/css/bootstrap.min (1).css (1).css">
+    <link rel="stylesheet" href="home-draft/css/style.css">
+    <link rel="stylesheet" href="home-draft/css/colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
   <link rel="stylesheet" href="css/recipeStyle.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
 </head>
 <body>
-  <nav class="navbar">
-
-    <div class="navbar__container">
-      <!-- logo-->
-      <a href="#home" id="navbar__logo">CELIAC101</a>
-      <button class="back__btn"><a href="index.html">Accueil</a></button>
+  <div class="navbar-custom">
+    <img class="logopic" src="home-draft/images/logonav1.png" alt="Logo">
+    <span class="pagename">Celiac101</span>
+    <ul class='navLinks'>
+        <li><a href="acceuil.php">Acceuil </a></li>
+        <li id="drop">Services <i class="fas fa-caret-down dropPhone"></i></li>
+        <li><a href="#">Informations </a></li>
+    </ul>
+    <div class="dropdownForPhone">
+        <ul>
+            <li><a href="#">Catalogue des produits</a></li>
+            <li><a href="#">Journal des aliments</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Localisations</a></li>
+            <li><a href="#">Contacter un specialiste</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Recettes</a></li>
+        </ul>
+        <ul></ul>
     </div>
+    <ul class="righNavLinks">
+        <li><a href=""> <i title="Dons" class="fas fa-donate"></i><a></li>
+        <li><a href=""> <i title="Chariot" class="fas fa-shopping-cart"></i><a></li>
+        <li id="dropProfil"> <i title="profil" class="fas fa-user"></i></li>
+    </ul>
+</div>
 
-  </nav>
+<div class="dropdown-service">
+    <ul>
+        <li><a href="#">Catalogue des produits</a></li>
+        <li><a href="#">Journal des aliments</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Localisations</a></li>
+        <li><a href="#">Contacter un specialiste</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Recettes</a></li>
+    </ul>
+    <ul></ul>
+</div>
+<div class="dropdownProfil">
+    <ul>
+    <li><a href="#">Modifier Profil</a></li>
+    <li>Se Deconnecter</li>
+    </ul>
+</div>
   
 
   <div class="search__wrapper">
@@ -61,9 +108,9 @@
       <div class="card__options">
         <button class="card__btn"><a href="#">Voir Recette</a></button>
 
-        <div class="like__notif">
+        <!--<div class="like__notif">
           Liked!
-        </div>
+        </div>-->
 
         <div class="card__icons">
           <a  class="like">
@@ -275,5 +322,6 @@
   <script src="js/searchBar.js"></script>
   <script src="searchFilter/filter.js"></script>
   <script src="searchFilter/drop.js"></script>
+  <script src="home-draft/Js/main.js"></script>
 </body>
 </html>
