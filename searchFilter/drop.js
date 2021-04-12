@@ -15,13 +15,7 @@ drop.addEventListener('click',(e)=>{
 
 
 });
-/*
-dropListItem.forEach(item =>{
-  item.addEventListener('click',function(){
-    let text=this.textContent;
-    document.querySelector('.default-option').textContent=text;
-  })
-})*/
+
 
 
 

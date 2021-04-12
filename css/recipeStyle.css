@@ -166,23 +166,11 @@
   background-color: white;
 }
 
-.search-icon {
+#search__icon
+{
   position: absolute;
-  top: 9px;
-  left: 795px;
-  width: 17px;
-  padding-top: 2px;
-}
-
-
-.clear-icon {
-  position: absolute;
-  top: 12px;
-  right: 830px;
-  width: 17px;
-  cursor: pointer;
-  visibility: hidden;
- /* margin-right: 645px;*/
+  padding: 13px;
+  
 }
 
 
