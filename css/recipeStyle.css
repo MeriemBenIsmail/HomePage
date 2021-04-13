@@ -202,6 +202,32 @@
   cursor: pointer;
 }
 
+.card__detail
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:1.3rem;
+}
+
+.detail__field
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  align-items: center;
+  
+}
+.number 
+{
+  font-weight: bold;
+  color:#137c8b;
+  font-size: 1.5rem;
+}
+.expression 
+{
+  color:#135058;
+}
 .card__img
 {
   height: 12rem;
@@ -214,6 +240,7 @@
   padding: 1rem;
   color:#5FC2BA;
   margin-left: 5.5em;
+  
 
 }
 .card__description
