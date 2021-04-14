@@ -239,7 +239,11 @@
 {
   padding: 1rem;
   color:#5FC2BA;
-  margin-left: 5.5em;
+  /*margin-left: 5.5em;*/
+  border-bottom: 1px  ;
+  border-style:ridge;
+  
+  
   
 
 }
