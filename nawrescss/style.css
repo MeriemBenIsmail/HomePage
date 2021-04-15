@@ -5,13 +5,13 @@ body {
     margin: 0;
     padding: 0;
 }
-/*
+
 a,
 a:hover {
     text-decoration: none;
     color: white;
     transition: 0.2s ease-in-out;
-}*/
+}
 
 ul {    /*  Eliminer le margin et le padding qui viennet par défaut par une liste ul*/
     margin: 0;

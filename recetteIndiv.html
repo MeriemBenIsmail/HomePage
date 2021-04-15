@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
 
    <link rel="stylesheet" href="css/recipeIndivStyle.css">
+   
  
   
 </head>
@@ -33,8 +34,8 @@
 
 <div class="main__container">
   
-    
   <h1 class="main__header">Bowl Chia Maison</h1>
+
   <div class="rating">
 
     <div class="star">
@@ -52,64 +53,172 @@
     </a>
   
   </div>
+
   <div class="recipe__container">
-    <div class="recipe__img">
-      <img src="images/reciper1.jpg" alt="">
+    <div class="slider">
+      <div class="slides">
+        <!--radio button start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio button end-->
+   
+        <!--slide image start-->
+         <div class="slide first">
+           <img src="images/chia1.jpg" alt="">
+         </div>
+         <div class="slide">
+           <img src="images/reciper1.jpg" alt="">
+         </div>
+         <div class="slide">
+           <img src="images/chia3.jpg" alt="">
+         </div>
+         <div class="slide">
+           <img src="images/chia2.jpg" alt="">
+         </div>
+         
+   
+        <!--slide image end -->
+   
+        <!--autonaviqgation start-->
+        <div class="navigation__auto">
+          <div class="auto__btn1"></div>
+          <div class="auto__btn2"></div>
+          <div class="auto__btn3"></div>
+          <div class="auto__btn4"></div>
+        </div>
+        <!--autonaviqgation end-->
+      </div>
+   
+      <!--manual navigation start-->
+      <div class="navigation__manual">
+        <label for="radio1" class="manual__btn"></label>
+        <label for="radio2" class="manual__btn"></label>
+        <label for="radio3" class="manual__btn"></label>
+        <label for="radio4" class="manual__btn"></label>
+      </div>
+      <!--manual navigation end-->
     </div>
-    
-    <div class="first__details">
+    <!--image slider end-->
 
-      <div class="detail">
-        <img src="images/clock.png" alt="">
-        <span>Minutes</span>
+
+      <div class="first__details">
+
+        <div class="detail">
+          <img src="images/clock.png" alt="">
+          <span>20 Minutes</span>
+        </div>
+  
+        <div class="detail">
+          <img src="images/chef.png" alt="">
+          <span>Facile</span>
+        </div>
+  
+        <div class="detail">
+          <img src="images/dollar.png" alt="">
+          <span>Bon marché</span>
+        </div>
+        
+  
       </div>
 
-      <div class="detail">
-        <img src="images/chef.png" alt="">
-        <span>Facile</span>
-      </div>
-
-      <div class="detail">
-        <img src="images/dollar.png" alt="">
-        <span>Bon marché</span>
-      </div>
       
+    
 
+    <div class="quantity__container">
+      <img id="remove" src="images/remove (1).png" alt="">
+      <span class="person__span">4 personnes</span>
+      <img id="add" src="images/add.png" alt="">
     </div>
+
+   <div class="detail__wrapper">
+    
+
     <div class="ingredient__container">
-      <div class="quantity__container">
-        <img id="remove" src="images/remove (1).png" alt="">
-        <span class="person__span">4 personnes</span>
-        <img id="add" src="images/add.png" alt="">
-      </div>
-      <div class="ingredient__wrapper">
+      <h2>Ingrédients</h2>
 
+      <div class="mini__card--wrapper">
+
+        <div class="mini__card">
+          <img src="images/salt-shaker.png" alt="">
+          <h3>1 cuillères à café</h3>
+          <h4>Sel</h4>
+        </div>
+        <div class="mini__card">
+          <img src="images/water.png" alt="">
+          <h3>1 cuillères à café</h3>
+          <h4>Sel</h4>
+          
+        </div>
+        <div class="mini__card">
+          <img src="images/butter.png" alt="">
+          <h3>1 cuillères à café</h3>
+          <h4>Sel</h4>
+          
+        </div>
+        <div class="mini__card">
+          <img src="images/milk.png" alt="">
+          <h3>1 cuillères à café</h3>
+          <h4>Sel</h4>
+        </div>
+
+        <div class="mini__card">
+          <img src="images/water.png" alt="">
+          <h3>1 cuillères à café</h3>
+          <h4>Sel</h4>
+        </div>
+
+        <div class="mini__card">
+          <img src="images/salt-shaker.png" alt="">
+          <h3>1 cuillères à café</h3>
+          <h4>Sel</h4>
+        </div>
+        
       </div>
+
+
     </div>
+
     <div class="step__container">
       <h2 class="step__header">
         Préparations
       </h2>
-      <div class="step__wrapper">
-        <div class="step__item">
-          <h3 class="step__header">Etape1</h3>
-          <p class="step__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, molestiae!</p>
-        </div>
-        <div class="step__item">
-          <h3 class="step__header">Etape2</h3>
-          <p class="step__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, molestiae!</p>
-        </div>
-        <div class="step__item">
-          <h3 class="step__header">Etape3</h3>
-          <p class="step__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, molestiae!</p>
-        </div>
-      </div>
+      <ul>
+        <li>
+          <h3>Etape1</h3>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        </li>
+  
+        <li>
+          <h3>Etape2</h3>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></li>
+  
+        <li>
+          <h3>Etape3</h3>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span></li>
+        <li>
+          <h3>Etape4</h3>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span></li>
+        <li>
+          <h3>Etape5</h3>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span></li>
+      </ul>
     </div>
+
+
+   </div> 
+    
+  </div>
+
+  <div class="final__section">
 
     
 
   </div>
   
 </div>
+<script src="js/serving.js"></script>
+<script src="js/slide.js"></script>
 </body>
 </html>
