@@ -6,8 +6,7 @@ body {
     padding: 0;
 }
 
-a,
-a:hover {
+.navbar-custom a,a:hover {
     text-decoration: none;
     color: white;
     transition: 0.2s ease-in-out;

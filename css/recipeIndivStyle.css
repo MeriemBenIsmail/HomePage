@@ -113,6 +113,10 @@
   color:#00000030;
 
 }
+.comment a:hover 
+{
+  color:#135058;
+}
 
 .rating
 {
@@ -627,20 +631,22 @@ margin-left:1.5rem;
  cursor: pointer;
 
 }
-#ingredient__checkbox:checked .mini__card
+/*
+#ingredient__checkbox:checked ~.mini__card
 {
- /* border: 2px solid #135058;
-  border-radius: 10px;*/
-}
+  border: 2px solid #135058;
+  border-radius: 10px;
+}*/
 .ingredientBtn
 {
     background: none;
     border: none;
+    border-radius: 15px;
     padding: 10px 20px;
     font-size: 20px;
     font-family: "Poppins";
     cursor: pointer;
-    margin: 10px;
+    margin: 20px;
     transition: 0.8s;
     position: relative;
     overflow: hidden;
@@ -648,6 +654,7 @@ margin-left:1.5rem;
 .ingredientBtn a 
 {
   color:#137c8b;
+  text-decoration: none;
 }
 
 .ingredientBtn:hover a{
@@ -662,11 +669,8 @@ margin-left:1.5rem;
   width: 100%;
   height: 0%;
   background: #137c8b;
-  
   z-index: -1;
   transition: 0.8s;
-}
-.ingredientBtn::before{
   top: 0;
   border-radius: 0 0 50% 50%;
 }
@@ -674,6 +678,98 @@ margin-left:1.5rem;
 .ingredientBtn:hover::before{
   height: 180%;
 }
+
+.star__rating--section
+{
+  display: flex;
+  background: #bdc3c7;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 10px;
+  width: fit-content;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+.star__section
+{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  
+}
+.star__section h4
+{
+  text-align: center;
+  color:#00416a;
+}
+.star__section a
+{
+  text-decoration: none;
+  /*color:#135058;*/
+  color:#00000030;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+
+.add__image
+{
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px dashed #111;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.add__image:hover
+{
+  transform: scale(1.02);
+}
+.add__image a
+
+{
+  text-decoration: none;
+  color:#135058;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+.add__image i
+{
+  font-size: 1.5rem;
+}
+
+.star__section a i.far:nth-child(1):hover
+{
+  color:#5FC2BA;
+}
+
+.star__section a i.far:nth-child(2):hover
+{
+  color:#5FC2BA;
+
+}
+
+.star__section a i.far:nth-child(3):hover
+{
+  color:#5FC2BA;
+}
+
+.star__section a i.far:nth-child(4):hover
+{
+  color:#5FC2BA;
+}
+
+.star__section a i.far:nth-child(5):hover
+{
+  color:#5FC2BA;
+}
+
+
 /*
 .comment__section
 {
