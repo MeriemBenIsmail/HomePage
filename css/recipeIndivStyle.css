@@ -28,6 +28,7 @@
   position: relative;
   transition: all 0.35s;
   background-color: #1C2942;
+  display: flex;
   
 }
 
@@ -36,6 +37,13 @@
   z-index:2;
   color:#fff;
   text-decoration: none;  
+}
+
+.back__btn img 
+{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
 }
 
 
