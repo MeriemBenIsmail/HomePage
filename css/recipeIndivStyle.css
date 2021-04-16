@@ -440,12 +440,57 @@ margin-left:1.5rem;
   margin-bottom: 1rem;
 }
 
+.step__summary
+{
+  
+  background: #bdc3c7;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+ 
+  flex-direction: column;
+ /* align-items: center;*/
+  
+}
+
+.step__summary--header
+{
+  border-bottom: 1px  ;
+  border-style:outset;
+  align-self: center;
+  
+}
+
+.step__summary--container
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.step__summary--content
+{
+  padding: 5px;
+  
+}
+
+.step__summary--content div 
+{
+  padding-left: 1rem;
+}
+
+
 .step__container ul 
 {
   position: relative;
   /*width: fit-content;*/
 }
 
+.header__container
+{
+  display: flex;
+}
 .step__container ul li 
 {
   position: relative;
@@ -456,11 +501,7 @@ margin-left:1.5rem;
   transition: 0.5s;
   cursor: pointer;
 }
-/*
-.step__container ul li span 
-{
-  border-left: 2px solid #137c8b;
-}*/
+
 .step__container ul li span::before
 {
   content:'';
@@ -510,6 +551,26 @@ margin-left:1.5rem;
   position: relative;
   
 }
+.ingredient__header
+{
+  display: flex;
+}
+
+.step__ingredient--img
+{
+  width: 40px;
+  height: 40px;
+  margin-left: 1rem;
+  
+}
+
+.item__wrapper
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .ingredient__container h2
 {
@@ -537,7 +598,9 @@ margin-left:1.5rem;
   transition: 0.3s;
   cursor: pointer;
   color:#999;
+  margin-bottom: 10px;
 }
+
 
 .mini__card:hover
 {
@@ -557,6 +620,123 @@ margin-left:1.5rem;
   width: 30px;
   height: 30px;
 }
+
+.mini__card #ingredient__checkbox
+{
+ margin-left: 100px;
+ cursor: pointer;
+
+}
+#ingredient__checkbox:checked .mini__card
+{
+ /* border: 2px solid #135058;
+  border-radius: 10px;*/
+}
+.ingredientBtn
+{
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "Poppins";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.ingredientBtn a 
+{
+  color:#137c8b;
+}
+
+.ingredientBtn:hover a{
+  color: #fff;
+}
+
+
+.ingredientBtn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #137c8b;
+  
+  z-index: -1;
+  transition: 0.8s;
+}
+.ingredientBtn::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.ingredientBtn:hover::before{
+  height: 180%;
+}
+/*
+.comment__section
+{
+  padding: 2rem;
+  width: 500px;
+  text-align: right;
+
+}
+.box__container
+{
+  height: 200px;
+  width: 100%;
+  background-color: #0B162C;
+  box-shadow: 0 5px 15px #111;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.box__container .box
+{
+  height: 80%;
+  width: 100%;
+  border-radius:5px ;
+  padding: 10px;
+  background-color: #f8f8f8;
+  overflow-y: auto ;
+  text-align: left;
+}
+
+.comment__section #input
+{
+  width: 100%;
+  height: 40px;
+  background: none;
+
+  font-size: 15px;
+  border-bottom: 1px solid #0B162C;
+}
+
+.comment__section #input:focus
+{
+  border-bottom: 2px solid #0B162C; 
+}
+
+.comment__section button
+{
+  height: 30px;
+  width: 160px;
+  background-color: #5fc2ba;
+  color:#fff;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 15px;
+  box-shadow: 0 3px 10px #111;
+  border-radius: 5px;
+}
+
+.comment__section__button:hover
+{
+  opacity: .8;
+}
+
+*/
 
 
 

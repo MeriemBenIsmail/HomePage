@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="nawrescss/style.css">
     <link rel="stylesheet" href="nawrescss/colors.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-
    <link rel="stylesheet" href="css/recipeIndivStyle.css">
    
  
@@ -136,54 +135,109 @@
     
 
     <div class="ingredient__container">
-      <h2>Ingrédients</h2>
-
-      <div class="mini__card--wrapper">
-
-        <div class="mini__card">
-          <img src="images/salt-shaker.png" alt="">
-          <h3>1 cuillères à café</h3>
-          <h4>Sel</h4>
-        </div>
-        <div class="mini__card">
-          <img src="images/water.png" alt="">
-          <h3>1 cuillères à café</h3>
-          <h4>Sel</h4>
-          
-        </div>
-        <div class="mini__card">
-          <img src="images/butter.png" alt="">
-          <h3>1 cuillères à café</h3>
-          <h4>Sel</h4>
-          
-        </div>
-        <div class="mini__card">
-          <img src="images/milk.png" alt="">
-          <h3>1 cuillères à café</h3>
-          <h4>Sel</h4>
-        </div>
-
-        <div class="mini__card">
-          <img src="images/water.png" alt="">
-          <h3>1 cuillères à café</h3>
-          <h4>Sel</h4>
-        </div>
-
-        <div class="mini__card">
-          <img src="images/salt-shaker.png" alt="">
-          <h3>1 cuillères à café</h3>
-          <h4>Sel</h4>
-        </div>
-        
+      <div class="ingredient__header">
+        <h2>Ingrédients</h2>
+        <img src="images/recipe-book.png" class="step__ingredient--img" alt="">
       </div>
+      
+      <div class="item__wrapper">
+        <div class="mini__card--wrapper">
+
+          <div class="mini__card">
+          
+            <img src="images/salt-shaker.png" alt="">
+            <input type="checkbox" name="check-btn" id="ingredient__checkbox">
+            <h3>1 cuillères à café</h3>
+            <h4>Sel</h4>
+  
+          </div>
+  
+          <div class="mini__card">
+            
+            <img src="images/water.png" alt="">
+            <input type="checkbox" name="check-btn" id="ingredient__checkbox">
+            <h3>1 cuillères à café</h3>
+            <h4>Sel</h4>
+            
+          </div>
+          <div class="mini__card">
+            
+            <img src="images/butter.png" alt="">
+            <input type="checkbox" name="check-btn" id="ingredient__checkbox">
+            <h3>1 cuillères à café</h3>
+            <h4>Sel</h4>
+            
+          </div>
+          <div class="mini__card">
+            
+            <img src="images/milk.png" alt="">
+            <input type="checkbox" name="check-btn" id="ingredient__checkbox">
+            <h3>1 cuillères à café</h3>
+            <h4>Sel</h4>
+          </div>
+  
+          <div class="mini__card">
+            
+            <img src="images/water.png" alt="">
+            <input type="checkbox" name="check-btn" id="ingredient__checkbox">
+            <h3>1 cuillères à café</h3>
+            <h4>Sel</h4>
+            
+          </div>
+  
+          <div class="mini__card">
+            
+            <img src="images/salt-shaker.png" alt="">
+            <input type="checkbox" name="check-btn" id="ingredient__checkbox">
+            <h3>1 cuillères à café</h3>
+            <h4>Sel</h4>
+          </div>
+  
+          
+        </div>
+
+        <div class="add__cart--btn">
+          <button class="ingredientBtn"><a href="#">Ajouter Panier</a></button>
+        </div>
+      </div>
+      
 
 
     </div>
 
     <div class="step__container">
-      <h2 class="step__header">
-        Préparations
-      </h2>
+      <div class="header__container">
+        
+        <h2 class="step__header">
+        
+          Préparations
+        </h2>
+        <img class="step__ingredient--img" src="images/cooking.png" alt="">
+      </div>
+      
+
+      <div class="step__summary">
+        <div class="step__summary--header"><strong
+        >Temps Total: </strong> 20 min</div>
+       
+        <div class="step__summary--container">
+          <div class="step__summary--content">
+            <h4>Péparation:</h4>
+            <div>20 min</div>
+          </div>
+
+          <div class="step__summary--content">
+            <h4>Repos:</h4>
+            <div>-</div>
+          </div>
+
+          <div class="step__summary--content">
+            <h4>Cuisson:</h4>
+            <div>15 min</div>
+          </div>
+          
+        </div>
+      </div>
       <ul>
         <li>
           <h3>Etape1</h3>
@@ -204,6 +258,8 @@
           <h3>Etape5</h3>
           <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span></li>
       </ul>
+
+      
     </div>
 
 
@@ -211,13 +267,22 @@
     
   </div>
 
-  <div class="final__section">
+  
+<!--<div class="comment__section">
 
+    <input type="text" id="input" placeholder="Leave us a comment...">
+    <button type="button" name="button" id="cancel">cancel</button>
+    <button type="button" name="button" id="comment">comment</button>
     
-
-  </div>
+  
+    <div class="box__container">
+      <div class="box"></div>
+    </div>
+  </div>-->
+  
   
 </div>
+<script src="js/comment.js"></script>
 <script src="js/serving.js"></script>
 <script src="js/slide.js"></script>
 </body>
